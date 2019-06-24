@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url("images/beaned.png")
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  margin: auto;
+  position: relative;
+  width: 25%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.imageborder {
+  border-color: green;
+  border-style: outset;
+  border-width: 10px;
+}
+
+.divborder {
+  background-image: url("images/beantimesmall.gif");
+  background-repeat: repeat-x;
+  background-color: gray;
+  width: 900px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.galaxy {
+  background-image: url("images/pixelgalaxy.png");
+  background-repeat: repeat-x;
+  background-color: gray;
+  border: 5px solid black;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+</style>
+
+<title>YOU GOT BEANED!!!</title>
+</head>
+<body>
+
+<img src="images/prankedbro.gif" alt="ULTIMATE PRANKING POWER!!!" class="center">
+
+<div class="divborder">
+</div>
+
+<br>
+
+<img src="images/friccinmoron.gif" alt="u friccin moron" class="imageborder center">
+
+<br>
+
+<section id="peyton">
+  <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/peyton1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/peyton2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/peyton3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/peyton4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/peyton5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/peyton6.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/peyton1.jpg" style="width:100%" onclick="currentSlide(1)" alt="flower crown uwu">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/peyton2.jpg" style="width:100%" onclick="currentSlide(2)" alt="bRuTaLlY dEvOuReD bY wOlVeS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/peyton3.jpg" style="width:100%" onclick="currentSlide(3)" alt="fancy attire with bean friend">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/peyton4.jpg" style="width:100%" onclick="currentSlide(4)" alt="BIG BOBA CHOMP">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/peyton5.jpg" style="width:100%" onclick="currentSlide(5)" alt="part robot with bean friend">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/peyton6.jpg" style="width:100%" onclick="currentSlide(6)" alt="2 kuul 4 schuul™">
+    </div>
+  </div>
+</div>
+</section>
+
+<br>
+
+<img src="images/youjustgot.gif" alt="you just got" class="imageborder center">
+
+<br>
+
+<img src="images/beaned.gif" alt="BEANED" class="imageborder center">
+
+<br>
+
+<div class="divborder">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section id="done">
+  <div class="galaxy">
+    <img src="images/lotsoflove.gif" alt="LMAO love u peytonnnnnn">
+  </div>
+</section>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
